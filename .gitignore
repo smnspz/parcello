@@ -1,0 +1,45 @@
+# Build output
+dist/
+.astro/
+
+# Dependencies
+node_modules/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment files
+.env
+.env.production
+.env.local
+.env.*.local
+
+# Cache
+.cache/
+.pnpm-store/
+
+# OS
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# IDE
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Playwright
+test-results/
+playwright-report/
+playwright/.cache/
+
+# Misc
+*.tsbuildinfo
+TODO.md

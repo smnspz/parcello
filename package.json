@@ -1,0 +1,53 @@
+{
+  "name": "parcello",
+  "version": "1.0.0",
+  "description": "Self-hostable package tracking web app",
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix .",
+    "test": "playwright test",
+    "test:ui": "playwright test --ui",
+    "prepare": "husky"
+  },
+  "keywords": [
+    "package-tracking",
+    "astro",
+    "cloudflare"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@astrojs/cloudflare": "^12.6.12",
+    "@astrojs/react": "^4.4.2",
+    "@tailwindcss/vite": "^4.2.1",
+    "astro": "^5.18.0",
+    "leaflet": "^1.9.4",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "tailwindcss": "^4.2.1"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.58.2",
+    "@types/leaflet": "^1.9.21",
+    "@types/node": "^25.3.3",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "@typescript-eslint/eslint-plugin": "^8.56.1",
+    "@typescript-eslint/parser": "^8.56.1",
+    "eslint": "^9.39.3",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-astro": "^1.6.0",
+    "eslint-plugin-jsx-a11y": "^6.10.2",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.3.1",
+    "prettier": "^3.8.1",
+    "prettier-plugin-astro": "^0.14.1",
+    "typescript": "^5.9.3"
+  }
+}

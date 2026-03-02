@@ -1,0 +1,12 @@
+@import 'tailwindcss';
+
+/* Custom theme configuration */
+@theme {
+  /* Add custom design tokens here if needed */
+}
+
+/* Base styles */
+body {
+  @apply bg-white text-gray-900;
+  @apply dark:bg-gray-900 dark:text-gray-100;
+}

@@ -1,0 +1,29 @@
+# Build output
+dist/
+.astro/
+
+# Dependencies
+node_modules/
+
+# Logs
+*.log
+
+# Environment files
+.env
+.env.*
+
+# Cache
+.cache/
+.pnpm-store/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Playwright
+test-results/
+playwright-report/
