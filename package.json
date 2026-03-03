@@ -33,6 +33,7 @@
         "tailwindcss": "^4.2.1"
     },
     "devDependencies": {
+        "@cloudflare/workers-types": "^4.20260301.1",
         "@playwright/test": "^1.58.2",
         "@types/leaflet": "^1.9.21",
         "@types/node": "^25.3.3",
