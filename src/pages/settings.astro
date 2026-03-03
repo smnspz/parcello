@@ -1,0 +1,22 @@
+---
+import DashboardLayout from '../layouts/DashboardLayout.astro';
+import SettingsForm from '../components/SettingsForm';
+---
+
+<DashboardLayout
+    title="Settings - Parcello"
+    description="Configure your tracking provider and manage your device settings"
+>
+    <!-- Page header -->
+    <header class="max-w-2xl mx-auto mb-8">
+        <h1 class="text-3xl font-bold" style="color: var(--color-text)">
+            Settings
+        </h1>
+        <p class="mt-2" style="color: var(--color-text-muted)">
+            Configure your device code and tracking provider
+        </p>
+    </header>
+
+    <!-- Settings form component -->
+    <SettingsForm client:load />
+</DashboardLayout>

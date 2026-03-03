@@ -18,20 +18,6 @@ import DashboardLayout from '../layouts/DashboardLayout.astro';
 
     <!-- Empty state / Placeholder -->
     <div class="flex flex-col items-center justify-center py-12">
-        <svg
-            class="w-24 h-24 mb-4"
-            style="color: var(--color-text-muted)"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-        >
-            <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="1.5"
-                d="M20 13V6a2 2 0 00-2-2H6a2 2 0 00-2 2v7m16 0v5a2 2 0 01-2 2H6a2 2 0 01-2-2v-5m16 0h-2.586a1 1 0 00-.707.293l-2.414 2.414a1 1 0 01-.707.293h-3.172a1 1 0 01-.707-.293l-2.414-2.414A1 1 0 006.586 13H4"
-            ></path>
-        </svg>
         <h2 class="text-xl font-semibold mb-2" style="color: var(--color-text)">
             No packages yet
         </h2>
@@ -42,12 +28,8 @@ import DashboardLayout from '../layouts/DashboardLayout.astro';
             Start tracking your shipments by adding a tracking number
         </p>
         <button
-            class="inline-flex items-center px-4 py-2 font-medium rounded-lg focus:outline-none focus:ring-2 focus:ring-offset-2 transition-colors"
+            class="inline-flex items-center px-4 py-2 font-medium rounded-lg focus:outline-none focus:ring-2 focus:ring-offset-2 transition-opacity hover:opacity-90 focus:opacity-90"
             style="background-color: var(--color-accent); color: white"
-            onmouseover="this.style.opacity='0.9'"
-            onmouseout="this.style.opacity='1'"
-            onfocus="this.style.opacity='0.9'"
-            onblur="this.style.opacity='1'"
         >
             <svg
                 class="w-5 h-5 mr-2"

@@ -13,9 +13,9 @@
     --color-warning: #c8922a;
 }
 
-/* Dark Mode - Warehouse at Night */
+/* Dark Mode - Warehouse at Night (System Preference) */
 @media (prefers-color-scheme: dark) {
-    :root {
+    :root:not([data-theme='light']) {
         --color-bg: #18130f;
         --color-surface: #241e18;
         --color-border: #3d2e22;
@@ -28,7 +28,54 @@
     }
 }
 
+/* Manual Dark Mode Override */
+:root[data-theme='dark'] {
+    --color-bg: #18130f;
+    --color-surface: #241e18;
+    --color-border: #3d2e22;
+    --color-text: #ede0cc;
+    --color-text-muted: #9e8a72;
+    --color-accent: #e8722a;
+    --color-accent-alt: #5b9ec9;
+    --color-success: #6a9e78;
+    --color-warning: #e0a832;
+}
+
+/* Manual Light Mode Override */
+:root[data-theme='light'] {
+    --color-bg: #f5f0e8;
+    --color-surface: #ede3d0;
+    --color-border: #c8b89a;
+    --color-text: #2c2016;
+    --color-text-muted: #7a6a56;
+    --color-accent: #d4621a;
+    --color-accent-alt: #3a7ca5;
+    --color-success: #4a7c59;
+    --color-warning: #c8922a;
+}
+
 body {
     background-color: var(--color-bg);
     color: var(--color-text);
+}
+
+/* Toast animations */
+@keyframes slide-down {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.animate-slide-down {
+    animation: slide-down 0.3s ease-out forwards;
+}
+
+/* Hover utilities for CSS custom properties */
+.hover-bg-main:hover {
+    background-color: var(--color-bg);
 }
