@@ -22,6 +22,9 @@ export default [
             globals: {
                 ...globals.browser,
                 ...globals.node,
+                RequestInit: 'readonly',
+                Response: 'readonly',
+                Headers: 'readonly',
             },
         },
         plugins: {
