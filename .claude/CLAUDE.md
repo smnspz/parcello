@@ -19,6 +19,7 @@
 
 ## Workflow Rules
 
+- **CRITICAL**: Present every decision for review in granular detail before implementation — user wants to review and approve all choices, no matter how small
 - Before implementing any task, explain what you will do and which files you will change — only start after approval
 - After completing a task, update `TODO.md`
 - After completing a task, automatically review and present the next logical task for approval
@@ -75,24 +76,24 @@ Supported providers at launch: **TrackingMore**, **17TRACK**.
 
 ```typescript
 interface TrackingProvider {
-  id: string;
-  name: string;
-  fetch(trackingNumber: string, carrier?: string): Promise<TrackingResult>;
+    id: string;
+    name: string;
+    fetch(trackingNumber: string, carrier?: string): Promise<TrackingResult>;
 }
 
 interface TrackingResult {
-  trackingNumber: string;
-  carrier: string;
-  status: 'pending' | 'in_transit' | 'delivered' | 'exception';
-  estimatedDelivery?: string;
-  events: TrackingEvent[];
+    trackingNumber: string;
+    carrier: string;
+    status: 'pending' | 'in_transit' | 'delivered' | 'exception';
+    estimatedDelivery?: string;
+    events: TrackingEvent[];
 }
 
 interface TrackingEvent {
-  timestamp: string;
-  location: string; // free text, geocoded via Nominatim for map pins
-  status: string;
-  description: string;
+    timestamp: string;
+    location: string; // free text, geocoded via Nominatim for map pins
+    status: string;
+    description: string;
 }
 ```
 
@@ -104,11 +105,11 @@ Two adapters, same interface:
 
 ```typescript
 interface StorageAdapter {
-  getShipments(): Promise<Shipment[]>;
-  saveShipment(shipment: Shipment): Promise<void>;
-  deleteShipment(id: string): Promise<void>;
-  getConfig(): Promise<UserConfig | null>;
-  saveConfig(config: UserConfig): Promise<void>;
+    getShipments(): Promise<Shipment[]>;
+    saveShipment(shipment: Shipment): Promise<void>;
+    deleteShipment(id: string): Promise<void>;
+    getConfig(): Promise<UserConfig | null>;
+    saveConfig(config: UserConfig): Promise<void>;
 }
 ```
 
