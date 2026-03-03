@@ -24,9 +24,9 @@ ENVIRONMENT = "production"
 ENVIRONMENT = "preview"
 
 [[env.preview.d1_databases]]
-binding = "DB"
+binding = "parcello_db_preview"
 database_name = "parcello-db-preview"
-database_id = "parcello-db-preview-id"
+database_id = "68f6f3c8-76d4-437f-ac14-84c451294662"
 
 [[env.preview.kv_namespaces]]
 binding = "SESSION"
