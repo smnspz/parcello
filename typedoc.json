@@ -1,0 +1,18 @@
+{
+    "entryPoints": ["src/lib/types.ts"],
+    "entryPointStrategy": "expand",
+    "out": "docs",
+    "plugin": [],
+    "name": "Parcello API Documentation",
+    "readme": "none",
+    "includeVersion": true,
+    "exclude": [
+        "**/node_modules/**",
+        "**/*.spec.ts",
+        "**/*.test.ts",
+        "functions/**"
+    ],
+    "excludePrivate": true,
+    "excludeProtected": true,
+    "hideGenerator": true
+}
