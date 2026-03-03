@@ -37,7 +37,9 @@ jobs:
                   cache: 'pnpm'
 
             - name: Install dependencies
-              run: pnpm install --no-frozen-lockfile
+              run: pnpm install --no-frozen-lockfile --ignore-scripts
+              env:
+                  HUSKY: 0
 
             - name: Generate documentation
               run: pnpm docs
