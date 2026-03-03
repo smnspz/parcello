@@ -28,3 +28,6 @@ Thumbs.db
 # Playwright
 test-results/
 playwright-report/
+
+# Documentation
+docs/
