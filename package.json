@@ -13,7 +13,8 @@
         "lint:fix": "eslint --fix .",
         "test": "playwright test",
         "test:ui": "playwright test --ui",
-        "prepare": "husky"
+        "prepare": "husky",
+        "docs": "typedoc"
     },
     "keywords": [
         "package-tracking",
