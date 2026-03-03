@@ -17,6 +17,38 @@
 - `role="list"` on `<ol>` and `<ul>` for structured content
 - Comment all code concisely (a word or two for HTML, brief inline for logic)
 
+## Color Palette
+
+### Light Mode — _Cardboard & Kraft_
+
+| Role           | Token name         | Hex       | Description           |
+| -------------- | ------------------ | --------- | --------------------- |
+| Background     | `color-bg`         | `#F5F0E8` | Aged paper white      |
+| Surface        | `color-surface`    | `#EDE3D0` | Unbleached cardboard  |
+| Border         | `color-border`     | `#C8B89A` | Box edge shadow       |
+| Text primary   | `color-text`       | `#2C2016` | Deep dark brown       |
+| Text secondary | `color-text-muted` | `#7A6A56` | Faded annotation      |
+| Accent / CTA   | `color-accent`     | `#D4621A` | Shipping orange       |
+| Accent alt     | `color-accent-alt` | `#3A7CA5` | Packing tape blue     |
+| Success        | `color-success`    | `#4A7C59` | Delivered stamp green |
+| Warning        | `color-warning`    | `#C8922A` | In-transit amber      |
+
+### Dark Mode — _Warehouse at Night_
+
+Brown-tinted dark theme. Background has a warm brown undertone, not a cold gray-black.
+
+| Role           | Token name         | Hex       | Description           |
+| -------------- | ------------------ | --------- | --------------------- |
+| Background     | `color-bg`         | `#18130F` | Very deep earth brown |
+| Surface        | `color-surface`    | `#241E18` | Lifted surface        |
+| Border         | `color-border`     | `#3D2E22` | Subtle warm separator |
+| Text primary   | `color-text`       | `#EDE0CC` | Warm parchment white  |
+| Text secondary | `color-text-muted` | `#9E8A72` | Dusty tan             |
+| Accent / CTA   | `color-accent`     | `#E8722A` | Shipping orange       |
+| Accent alt     | `color-accent-alt` | `#5B9EC9` | Packing tape blue     |
+| Success        | `color-success`    | `#6A9E78` | Pale sage green       |
+| Warning        | `color-warning`    | `#E0A832` | Amber glow            |
+
 ## Workflow Rules
 
 - **CRITICAL**: Present every decision for review in granular detail before implementation — user wants to review and approve all choices, no matter how small

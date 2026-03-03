@@ -1,0 +1,10 @@
+<svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- Top face -->
+    <path d="M12 16 L32 8 L52 16 L32 24 Z" fill="#D4621A" />
+    <!-- Left face -->
+    <path d="M12 16 L12 44 L32 52 L32 24 Z" fill="#B8531A" />
+    <!-- Right face -->
+    <path d="M32 24 L32 52 L52 44 L52 16 Z" fill="#E67321" />
+    <!-- Tape on front -->
+    <line x1="32" y1="24" x2="32" y2="52" stroke="#3A7CA5" stroke-width="1.5" stroke-dasharray="2,2" />
+</svg>
