@@ -46,6 +46,40 @@ export type TrackingStatus =
     | 'exception';
 
 /**
+ * Provider types - native (no API key) vs external aggregators (require API key)
+ * @type ProviderType
+ */
+export type ProviderType = 'native' | 'trackingmore' | '17track';
+
+/**
+ * Carrier metadata from database
+ * @interface CarrierMetadata
+ */
+export interface CarrierMetadata {
+    /** Unique carrier code (e.g., "poste-italiane") */
+    carrierCode: string;
+    /** Human-readable carrier name */
+    carrierName: string;
+    /** Whether this carrier has native support (no API key needed) */
+    isNative: boolean;
+    /** Regex pattern for detecting this carrier from tracking number */
+    trackingPattern?: string;
+}
+
+/**
+ * Result of carrier detection from tracking number
+ * @interface CarrierDetectionResult
+ */
+export interface CarrierDetectionResult {
+    /** Detected carrier code (undefined if detection failed) */
+    carrier?: string;
+    /** Confidence level of detection */
+    confidence: 'high' | 'medium' | 'low' | 'none';
+    /** Method used for detection */
+    method: 'pattern' | 'user_specified' | 'unknown';
+}
+
+/**
  * Response from tracking provider API
  * @interface TrackingResult
  */
@@ -60,6 +94,8 @@ export interface TrackingResult {
     estimatedDelivery?: string;
     /** Array of tracking events, ordered chronologically */
     events: TrackingEvent[];
+    /** Which provider was used to fetch this tracking data */
+    providerUsed?: ProviderType;
 }
 
 /**
@@ -68,10 +104,10 @@ export interface TrackingResult {
  * @interface UserConfig
  */
 export interface UserConfig {
-    /** Selected tracking provider ID (e.g., "trackingmore", "17track") */
-    provider: string;
-    /** AES-GCM encrypted API key */
-    apiKey: string;
+    /** Selected tracking provider ID (e.g., "trackingmore", "17track") - optional, only needed for non-native carriers */
+    provider?: string;
+    /** AES-GCM encrypted API key - optional, only needed for non-native carriers */
+    apiKey?: string;
     /** Configuration creation timestamp (Unix epoch) */
     createdAt: number;
 }
