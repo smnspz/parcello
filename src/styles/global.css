@@ -16,11 +16,11 @@
 /* Dark Mode - Warehouse at Night (System Preference) */
 @media (prefers-color-scheme: dark) {
     :root:not([data-theme='light']) {
-        --color-bg: #18130f;
-        --color-surface: #241e18;
-        --color-border: #3d2e22;
-        --color-text: #ede0cc;
-        --color-text-muted: #9e8a72;
+        --color-bg: #0c0c0c;
+        --color-surface: #1a1a1a;
+        --color-border: #2e2e2e;
+        --color-text: #e5e5e5;
+        --color-text-muted: #8a8a8a;
         --color-accent: #e8722a;
         --color-accent-alt: #5b9ec9;
         --color-success: #6a9e78;
@@ -30,11 +30,11 @@
 
 /* Manual Dark Mode Override */
 :root[data-theme='dark'] {
-    --color-bg: #18130f;
-    --color-surface: #241e18;
-    --color-border: #3d2e22;
-    --color-text: #ede0cc;
-    --color-text-muted: #9e8a72;
+    --color-bg: #0c0c0c;
+    --color-surface: #1a1a1a;
+    --color-border: #2e2e2e;
+    --color-text: #e5e5e5;
+    --color-text-muted: #8a8a8a;
     --color-accent: #e8722a;
     --color-accent-alt: #5b9ec9;
     --color-success: #6a9e78;

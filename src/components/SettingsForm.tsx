@@ -156,6 +156,22 @@ export default function SettingsForm() {
 
                     {/* Provider Selector */}
                     <div className="mb-6">
+                        <p
+                            className="text-xs mb-4"
+                            style={{ color: 'var(--color-text-muted)' }}
+                        >
+                            These fields are only needed if your carrier is not
+                            automatically supported.{' '}
+                            <a
+                                href="https://www.trackingmore.com/supported-carriers.html"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="underline hover:no-underline"
+                                style={{ color: 'var(--color-accent)' }}
+                            >
+                                View supported carriers
+                            </a>
+                        </p>
                         <DropdownMenu
                             label="Tracking Provider"
                             value={provider}
