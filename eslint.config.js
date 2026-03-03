@@ -4,6 +4,7 @@ import tsparser from '@typescript-eslint/parser';
 import astro from 'eslint-plugin-astro';
 import jsxA11y from 'eslint-plugin-jsx-a11y';
 import prettier from 'eslint-config-prettier';
+import globals from 'globals';
 
 export default [
     js.configs.recommended,
@@ -19,7 +20,8 @@ export default [
                 },
             },
             globals: {
-                process: 'readonly',
+                ...globals.browser,
+                ...globals.node,
             },
         },
         plugins: {
