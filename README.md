@@ -4,7 +4,7 @@
   <img src="public/favicon.svg" alt="Parcello Logo" width="120" height="120">
   <p><em>Self-hostable package tracking web app</em></p>
 
-![Build Status](https://github.com/YOUR_USERNAME/parcello/workflows/Deploy%20to%20Cloudflare%20Pages/badge.svg)
+![Build Status](https://github.com/smnspz/parcello/workflows/Deploy%20to%20Cloudflare%20Pages/badge.svg)
 
 </div>
 
@@ -12,13 +12,12 @@
 
 ## 📦 About
 
-Parcello is a self-hostable package tracking application that lets you monitor all your shipments in one place. No login required — just bring your own tracking API key.
+Parcello is a package tracking application that lets you monitor all your shipments in one place. No login required — just bring your own tracking API key.
 
 **Features:**
 
 - 📍 Track packages from multiple carriers
 - 🗺️ Interactive maps showing shipment locations
-- 🌓 Beautiful dark/light mode with warm, earthy design
 - 🔐 Client-side encryption for API keys
 - 🚀 Deploy to Cloudflare Pages or self-host
 - 📱 Fully responsive mobile-first design
@@ -37,7 +36,7 @@ Parcello is a self-hostable package tracking application that lets you monitor a
 1. **Clone the repository**
 
     ```bash
-    git clone https://github.com/YOUR_USERNAME/parcello.git
+    git clone https://github.com/smnspz/parcello.git
     cd parcello
     ```
 
@@ -88,9 +87,3 @@ The built files will be in the `dist/` directory.
 ## 📄 License
 
 MIT
-
----
-
-<div align="center">
-  Made with ❤️ and 📦
-</div>
