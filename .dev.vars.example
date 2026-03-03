@@ -1,0 +1,8 @@
+# Local development environment variables
+# Copy this file to .dev.vars and fill in your values
+# .dev.vars is gitignored and used by `wrangler dev`
+
+# Encryption salt for AES-GCM key derivation
+# Generate with: openssl rand -hex 32
+# WARNING: Changing this will invalidate all encrypted API keys
+ENCRYPTION_SALT=generate-your-own-salt-here

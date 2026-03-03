@@ -18,6 +18,7 @@ yarn-error.log*
 .env.production
 .env.local
 .env.*.local
+.dev.vars
 
 # Cache
 .cache/
@@ -43,3 +44,10 @@ playwright/.cache/
 # Misc
 *.tsbuildinfo
 TODO.md
+
+# Wrangler
+.wrangler/
+.mf/
+
+# Documentation
+docs/

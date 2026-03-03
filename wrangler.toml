@@ -1,0 +1,33 @@
+name = "parcello"
+compatibility_date = "2025-03-02"
+compatibility_flags = ["nodejs_compat"]
+pages_build_output_dir = "dist"
+
+# D1 Database binding
+[[d1_databases]]
+binding = "DB"
+database_name = "parcello-db"
+database_id = "5b468c7f-7688-4991-8d66-a0b48f0575a4"
+
+# KV namespace for sessions (required by @astrojs/cloudflare)
+[[kv_namespaces]]
+binding = "SESSION"
+id = "237e5273c8c04118b1a637d920b88d06"
+
+# Environment variables (non-sensitive)
+[vars]
+ENVIRONMENT = "production"
+
+# Preview environment
+[env.preview]
+[env.preview.vars]
+ENVIRONMENT = "preview"
+
+[[env.preview.d1_databases]]
+binding = "DB"
+database_name = "parcello-db-preview"
+database_id = "parcello-db-preview-id"
+
+[[env.preview.kv_namespaces]]
+binding = "SESSION"
+id = "237e5273c8c04118b1a637d920b88d06"
